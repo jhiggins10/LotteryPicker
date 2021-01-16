@@ -1,0 +1,45 @@
+<html>
+<body>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+
+
+
+<div class="grid-container">
+<body onload="getDate()">
+<div class="item1"><h1 id="title">Lottery Results</h1></div>
+<div class="item2">
+        <a href="https://twitter.com/TNLUK"> Twitter </a> <br>
+        <a href="https://www.youtube.com/user/TheNationalLottery">Youtube</a> <br>
+        <a href="https://www.national-lottery.co.uk/">Official Website</a>
+</div>
+<div class="item3">
+<p id= "TodaysDate"> </p>
+  <label for="Numbers">How many Numbers:</label>
+  <select name="Numbers" id="numberOfBalls">
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+  </select>
+  <br><br>
+  <p>Are you doing a lucky dip?</p>
+  <select name="Lucky" id="LuckyDip">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+  <br><br>
+  <button onclick="getNumber()">Click me</button>
+</div>
+<div class="item4">
+  <div id="TodayResults">
+      <h3 id="tellUser"></h3>
+      <p id="showResults"></p>
+      <p id="ShowFinal"></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
